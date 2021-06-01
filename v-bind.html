@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vue js</title>
+    <style media="screen" >
+        .red{
+            color: red;
+        }
+        .green{
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <div id="app" >
+        <h1>{{ titulo }}</h1> 
+        <p :class="classe" >Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti doloribus dignissimos ducimus ratione error, optio numquam atque totam laudantium! Veniam nostrum aspernatur voluptates incidunt error sit at dolor a iste!</p>
+        <img :src="imagem" alt="">
+    </div>
+
+
+    <script src="https://unpkg.com/vue" ></script>
+    <script>
+        var app = new Vue({
+            el:"#app",
+            data:{
+                titulo: "Vue js do jeito ninja",
+                imagem: "https://i.ytimg.com/vi/DsuTwV0jwaY/maxresdefault.jpg",
+                classe: "green"
+            }
+        })
+    </script>
+</body>
+</html>
