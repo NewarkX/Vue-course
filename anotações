@@ -4,3 +4,4 @@ v-else quando o v-if for false ele vai exibir o v-else
 v-for para mostrar os elementos de um array
 v-model ele atrela a variavel do html com do js
 v-bind usado para associar uma variavel do js com a tag html tambem pode ser usado usando somente : ex :src=""
+v-on atrela um evento a um metodo pode ser usado tambem como @
