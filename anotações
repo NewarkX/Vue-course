@@ -1,0 +1,3 @@
+diretiva codigo q e implementado dentro do html ex v-if v-else,etc
+v-if so vai fazer algo quando a variavel for true
+v-else quando o v-if for false ele vai exibir o v-else
