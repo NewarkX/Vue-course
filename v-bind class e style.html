@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <title>Vue js</title>
+</head>
+<body>
+    <div id="app" >
+        <h1>{{ titulo }}</h1> 
+        <button class="btn" v-bind:class="btnClassLimpar" v-bind:style="btnStyleLimpar" >Limpar</button>
+        <button class="btn" v-bind:class="btnClassEnviar" v-bind:style="btnStyleEnviar" >Enviar</button>
+    </div>
+
+
+    <script src="https://unpkg.com/vue" ></script>
+
+    <script>
+        var app = new Vue({
+            el:"#app",
+            data:{
+                titulo: "Vue js do jeito ninja",
+                btnClassLimpar:{ //declaracao como objeto
+                    'btn-danger':true,
+                    'btn-sm':false
+                },
+                btnClassEnviar: [ //declaracao como array
+                    'btn-primary','btn-lg'
+                ],
+                btnStyleLimpar:[ //declaracao como array no style
+                    {'font-size': '30px'},
+                    {'text-transform': 'lowercase'}
+                ],
+                btnStyleEnviar:{ //declaracao como objeto no style
+                    'font-size': '30px'
+                }
+            }
+        });
+    </script>
+</body>
+</html>
